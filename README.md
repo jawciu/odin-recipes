@@ -1,0 +1,1 @@
+The goal of this project is to become familiar with the basic structure of HTML.
