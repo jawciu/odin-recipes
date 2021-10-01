@@ -1,0 +1,47 @@
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+header {
+  margin-top: 3.1rem;
+  display:flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Homemade Apple', cursive;
+  color:rgb(229, 22, 54);
+  font-size: 1.2rem;
+}
+
+img {
+  width: 37.5rem;
+  margin: 0 1rem;
+}
+
+ul {
+  margin-top: 6.25rem;
+  text-align: center;
+}
+
+a {
+  display:block;
+  text-decoration: none;
+  color: rgb(85, 85, 85);
+  font-weight: 300;
+  font-family: 'Gruppo', cursive;
+  font-size: 1.3rem;
+  margin: 0.8rem;
+}
+
+a:hover {
+  /*color:rgb(192, 15, 41)*/
+  color: rgb(119, 119, 119);
+  font-size: 1.35rem;
+}
