@@ -3,29 +3,31 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Gruppo', cursive;
 }
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-header {
+/* HOME PAGE */
+header.home-header {
   margin-top: 3.1rem;
   display:flex;
   justify-content: center;
 }
 
-h1 {
+h1.home-title {
   font-family: 'Homemade Apple', cursive;
   color:rgb(229, 22, 54);
   font-size: 1.2rem;
 }
 
-img {
+img.ottolenghi-logo {
   width: 37.5rem;
   margin: 0 1rem;
 }
 
-ul {
+ul.home-list {
   margin-top: 6.25rem;
   text-align: center;
 }
@@ -41,7 +43,106 @@ a {
 }
 
 a:hover {
-  /*color:rgb(192, 15, 41)*/
   color: rgb(119, 119, 119);
   font-size: 1.35rem;
 }
+
+/* RECIPIE PAGES */
+h1.recipe-title {
+  color:rgb(229, 22, 54);
+  margin: 1rem;
+  max-height: 100vh;
+}
+
+img.img-eggs {
+  width: 28rem;
+  height: 36.9rem;
+  flex: 0;
+}
+
+.container-recipe {
+  display: flex;
+  margin: 0 1rem;
+}
+
+h2.desciption {
+  font-size: 1.1rem;
+  margin-left: 2.5rem;
+}
+
+.container-instructions {
+  display: flex;
+  flex-direction: column;
+}
+
+/* MEDIA QUERY*/
+@media only screen and (max-width: 768px){
+  :root {font-size: 0.7rem;
+  } 
+  .container-recipe { 
+    flex-direction: column; 
+  }
+  .container-instructions {
+    margin-left: 0.5rem;
+    margin-right: 1.5rem;
+  }
+  img.img-eggs {
+     transform : rotate(90deg);
+     margin: 0 auto;
+     width: 16rem;
+  }
+  h1.recipe-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0 -1rem 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+   :root {font-size: 0.8rem;
+  } 
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 896px)
+ and (orientation:portrait) {
+  :root {font-size: 0.9rem;
+  } 
+  .container-recipe { 
+    flex-direction: column; 
+  }
+  .container-instructions {
+    margin-left: 0.5rem;
+    margin-right: 1.5rem;
+  }
+  img.img-eggs {
+     transform : rotate(90deg);
+     margin: 0 auto;
+  }
+  h1.recipe-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem 0 -2rem 0;
+  }
+ }
+ 
+ @media only screen and (min-device-width: 896px) and (max-device-width: 1024px)
+ and (orientation:portrait) {
+  :root {font-size: 1.1rem;
+  } 
+  .container-recipe { 
+    flex-direction: column; 
+  }
+  .container-instructions {
+    margin-left: 0.5rem;
+    margin-right: 1.5rem;
+  }
+  img.img-eggs {
+     transform : rotate(90deg);
+     margin: 0 auto;
+  }
+  h1.recipe-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 2rem 0 -2rem 0;
+  }
+ }
