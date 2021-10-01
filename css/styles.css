@@ -54,7 +54,7 @@ h1.recipe-title {
   max-height: 100vh;
 }
 
-img.img-eggs {
+img.img-dish {
   width: 28rem;
   height: 36.9rem;
   flex: 0;
@@ -86,7 +86,7 @@ h2.desciption {
     margin-left: 0.5rem;
     margin-right: 1.5rem;
   }
-  img.img-eggs {
+  img.img-dish {
      transform : rotate(90deg);
      margin: 0 auto;
      width: 16rem;
@@ -114,7 +114,7 @@ h2.desciption {
     margin-left: 0.5rem;
     margin-right: 1.5rem;
   }
-  img.img-eggs {
+  img.img-dish {
      transform : rotate(90deg);
      margin: 0 auto;
   }
@@ -136,7 +136,7 @@ h2.desciption {
     margin-left: 0.5rem;
     margin-right: 1.5rem;
   }
-  img.img-eggs {
+  img.img-dish {
      transform : rotate(90deg);
      margin: 0 auto;
   }
