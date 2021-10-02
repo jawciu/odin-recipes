@@ -29,6 +29,7 @@ img.ottolenghi-logo {
 
 ul.home-list {
   margin-top: 6.25rem;
+  padding:0;
   text-align: center;
 }
 
@@ -79,6 +80,17 @@ h2.desciption {
 @media only screen and (max-width: 768px){
   :root {font-size: 0.7rem;
   } 
+  header.home-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1.home-title {
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+  img.ottolenghi-logo {
+    width: 40rem;
+  }
   .container-recipe { 
     flex-direction: column; 
   }
@@ -98,6 +110,12 @@ h2.desciption {
   }
 }
 
+@media only screen and (max-width: 500px){
+  img.ottolenghi-logo {
+    width: 25rem;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
    :root {font-size: 0.8rem;
   } 
@@ -107,6 +125,14 @@ h2.desciption {
  and (orientation:portrait) {
   :root {font-size: 0.9rem;
   } 
+  header.home-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1.home-title {
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
   .container-recipe { 
     flex-direction: column; 
   }
@@ -129,6 +155,14 @@ h2.desciption {
  and (orientation:portrait) {
   :root {font-size: 1.1rem;
   } 
+  header.home-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1.home-title {
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
   .container-recipe { 
     flex-direction: column; 
   }
